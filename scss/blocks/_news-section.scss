@@ -1,0 +1,148 @@
+
+
+// WHAT NEWS SECTION STYLES
+
+.news-section {
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+// .news__wrapper {
+
+// }
+
+.news__uppertitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px; 
+  color: #00094A;
+  margin: 0;
+}
+
+.news__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px; 
+  color: #00094A;
+  margin: 0;
+}
+
+.news__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.news__item {
+  width: 100%;
+  max-width: 360px;
+  margin-left: 101px;
+}
+
+.news__item:nth-child(1) {
+  margin-left: 0;
+}
+
+.news__item-img-wrapper {
+  overflow: hidden;
+}
+
+.news__item-img {
+  width: 100%;
+  max-width: 360px;
+  transition: all 0.4s ease-out;
+}
+
+.news__item-img:hover {
+  transform: scale(1.2);
+}
+
+.news__item-upper-text {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px; 
+  color: #00094A;
+  opacity: 0.5;
+  margin: 0;
+  margin-left: 18px;
+  margin-top: 25px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/calendar.svg");
+    left: -18px;
+    opacity: 0.5;
+  }
+}
+
+.news__item-title {
+  width: 340px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #00094A;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.news__item-btm-text {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #06A39C;
+  margin: 0;
+  margin-top: 25px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 15px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/arrow-offers.svg");
+    top: 4px;
+    left: 88px;
+  }
+}
+
+
+@include breakpointdown (1024px) {
+  .news__list {
+    overflow-x: scroll;
+    padding-bottom: 35px;
+  }
+}
+
+@include breakpointdown (768px) {
+
+  .news__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .news__item {
+    margin-left: 20px;
+    max-width: 277px;
+  }
+
+  .news__item-title {
+    width: 277px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

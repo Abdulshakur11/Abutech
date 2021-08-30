@@ -1,0 +1,175 @@
+// OFFER SECTION STYLES
+
+.offer-section {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+// .offer__wrapper {
+  
+// }
+
+.offer__uptitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00094A;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.offer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #00094A;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+.offer__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offer__item {
+  margin-left: 60px;
+}
+
+.offer__item:nth-child(1){
+  margin-left: 0;
+}
+
+.offer__item:nth-child(4){
+  margin-left: 0;
+}
+
+.offer__item {
+  position: relative;
+  width: 100%;
+  max-width: 298px;
+  height: 373px;
+  border: 1px solid #DBDBDB;
+  box-shadow: 0px 0px 0px 3px rgba(7, 50, 90, 0.1);
+  border-radius: 3px;
+  margin-top: 60px;
+}
+
+.offer__item-ac::before {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 15px;
+  background-repeat: no-repeat;
+  content: "";
+  background-image: url("../../images/arrow-offers.svg");
+  cursor: pointer;
+  bottom: 30px;
+  right: 30px;
+}
+
+.offer__item-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #00094A;
+  margin: 0;
+  margin-top: 24px;
+
+}
+
+.offer__item-subtitle {
+  width: 249px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #00094A;
+  margin: 0;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 65px;
+}
+
+//  RESPONSIVE
+
+@include breakpointdown (1054px) {
+
+  .offer__item:nth-child(1) {
+    margin-left: 60px;
+  }
+  .offer__item:nth-child(3) {
+    margin-left: 60px;
+  }
+
+  .offer__item:nth-child(4) {
+    margin-left: 60px;
+  }
+}
+
+@include breakpointdown (768px){
+
+  .offer__item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .offer__item:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .offer__item:nth-child(5) {
+    margin-left: 0;
+  }
+
+
+  .offer-section {
+    padding-top: 190px;
+  }
+
+}
+
+@include breakpointdown (695px) {
+
+  .offer-section {
+    padding-top: 450px;
+  }
+
+  .offer__title {
+    width: 226px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .offer__item {
+    margin-left: 0;
+  }
+
+  .offer__item:nth-child(1) {
+    margin-left: 0px;
+  }
+  .offer__item:nth-child(3) {
+    margin-left: 0px;
+  }
+  .offer__item:nth-child(4) {
+    margin-left: 0px;
+  }
+} 

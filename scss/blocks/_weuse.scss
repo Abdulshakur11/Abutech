@@ -1,0 +1,205 @@
+// WHAT WE USE SECTION STYLES
+
+.weuse-section {
+  padding-bottom: 133px;
+  overflow: hidden;
+}
+
+// .weuse__wrapper {}
+
+.weuse__upper-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #00094A;
+  margin: 0;
+}
+
+.weuse__title {
+  width: 100%;
+  max-width: 520px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #00094A;
+  margin: 0;
+}
+
+.weuse__upper-list {
+  @include list-unstyled;
+  width: 100%;
+  max-width: 1280px;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.weuse__upper-item {
+  margin-bottom: 26px;
+}
+
+.weuse__item-link {
+  width: 100%;
+  max-width: 787px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+  padding: 0px 30px 24px 30px;
+}
+
+.weuse__item-link:hover {
+  color:  #07d4ca;
+}
+
+.weuse__item-link:active {
+  color:  #06A39C;
+  border-bottom: 4px solid #06A39C;
+}
+
+.weuse__upper-list-line {
+  display: block;
+  width: 1280px;
+  height: 1px;
+  opacity: 0.2;
+  background-color: #000000;
+}
+
+
+.weuse__list {
+  @include list-unstyled;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.weuse__item {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  max-width: 170px;
+  margin-left: 20px;
+  margin-top: 50px;
+  // border: 1px solid #000000;
+
+  &::before {
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 60px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/react.png");
+    left: 52px;
+  }
+}
+
+.weuse__item:nth-child(2) {
+  &::before {
+    background-image: url("../../images/git.png");
+  }
+}
+
+.weuse__item:nth-child(3) {
+  &::before {
+    background-image: url("../../images/sass-logo.png");
+  }
+}
+
+.weuse__item:nth-child(4) {
+  &::before {
+    background-image: url("../../images/nodejs-logo.png");
+  }
+}
+
+.weuse__item:nth-child(5) {
+  &::before {
+    background-image: url("../../images/typescreept.png");
+  }
+}
+
+.weuse__item:nth-child(6) {
+  &::before {
+    background-image: url("../../images/vujes-logo.png");
+    width: 70px;
+  }
+}
+
+.weuse__item:nth-child(7) {
+  &::before {
+    background-image: url("../../images/angular.png");
+  }
+}
+
+.weuse__item:nth-child(8) {
+  &::before {
+    background-image: url("../../images/postman.png");
+  }
+}
+
+.weuse__item:nth-child(9) {
+  &::before {
+    background-image: url("../../images/culp.png");
+    left: 68px;
+  }
+}
+
+.weuse__item-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+// RESPONSINE
+
+@include breakpointdown (768px) {
+  .weuse__upper-list {
+    overflow-x: scroll;
+  }
+  .weuse__upper-item:nth-child(1){
+    margin-left: 230px;
+  }
+}
+
+@include breakpointdown (576px) {
+  .weuse__upper-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  .weuse__title {
+    width: 300px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  
+  .weuse__item {
+    margin-left: 5px;
+    max-width: 80px;
+
+    &::before {
+      left: 5px;
+    }
+  }
+
+  .weuse__item:nth-child(9) {
+    &::before {
+      left: 23px;
+    }
+  }
+}

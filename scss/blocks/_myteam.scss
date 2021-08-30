@@ -1,0 +1,263 @@
+// MYTEAM SECTION STYLES
+
+.team-section {
+  padding-bottom: 125px;
+}
+
+// .team__wrapper {}
+
+.team__upper-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00094A;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.team__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #00094A;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.team__subtitle {
+  width: 488px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #00094A;
+  opacity: 0.8;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.team__list {
+  @include list-unstyled;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.team__item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.team__item:first-child {
+  margin-left: 0;
+}
+
+.team__item:nth-child(4){
+  margin-left: 0;
+}
+
+.team__item-img {
+  width: 370px;
+  transition: all 0.4s ease-out;
+}
+
+.team__item-title {
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  bottom: 30px;
+  left: 18px;
+  z-index: 2;
+}
+
+.team__item-subtitle {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  bottom: 10px;
+  left: 18px;
+  z-index: 2;
+}
+
+.team__item-linergt {
+  position: absolute;
+  width: 370px;
+  height: 95px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 20.54%, #000000 86.46%);
+  bottom: 0;
+}
+
+.team__item-info {
+  position: absolute;
+  width: 370px;
+  height: 375px;
+  z-index: 10;
+  background-color: #002529f6;
+  bottom: -380px;
+  transition: all 0.7s ease-out;
+}
+
+.team__item:hover .team__item-img {
+  transform: scale(1.2);
+  filter: blur(3px);
+}
+
+.team__item:hover .team__item-info {
+  bottom: 0;
+}
+
+.team__item-title-info {
+  text-align: center;
+  width: 360px;
+  top: 120px;
+  left: 0px;
+  margin: 0;
+}
+
+.team__item-subtitle-info {
+  width: 360px;
+  top: 150px;
+  left: 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.team__item-info-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: $white;
+  width: 360px;
+  margin: 0;
+  bottom: 70px;
+  left: 30px;
+}
+
+// RESPONSIVE
+
+@include breakpointdown (1270px) {
+  .team__list {
+    justify-content: center;
+  }
+
+  .team__item:first-child {
+    margin-left: 0px;
+  }
+
+  .team__item:nth-child(3) {
+    margin-left: 0px;
+  }
+
+  .team__item:nth-child(4) {
+    margin-left: 60px;
+  }
+
+  .team__item:nth-child(5) {
+    margin-left: 0px;
+  }
+}
+
+@include breakpointdown (900px) {
+  .team__item {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .team__item:nth-child(2) {
+    margin-left: 20px;
+  }
+
+  .team__item:nth-child(4) {
+    margin-left: 20px;
+  }
+
+  .team__item:nth-child(6) {
+    margin-left: 20px;
+  }
+
+  .team__item-title-info{
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .team__item-subtitle-info {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+ .team__item-info-text {
+  width: 280px;
+  font-size: 12px;
+  line-height: 22px;
+ }
+
+}
+
+@include breakpointdown (767px) {
+
+  .team__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 300px;
+  }
+
+  .team__subtitle {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .team__item {
+    width: 280px;
+    margin-top: 20px;
+  }
+
+  .team__item:nth-child(2) {
+    margin-left: 10px;
+  }
+
+  .team__item:nth-child(4) {
+    margin-left: 10px;
+  }
+
+  .team__item:nth-child(6) {
+    margin-left: 10px;
+  }
+
+  .team__item-title-info{
+    top: 190px;
+  }
+
+  .team__item-subtitle-info {
+    top: 222px;
+  }
+
+  .team__item-info-text{
+    bottom: 25px;
+  }
+
+
+}
+
+@include breakpointdown (610px) {
+  .team__item:nth-child(even) {
+    margin-left: 0;
+  }
+
+}
