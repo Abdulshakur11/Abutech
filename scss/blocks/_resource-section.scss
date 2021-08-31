@@ -1,0 +1,263 @@
+// RESOUERCES SECTION STYLES
+
+.resource-section {
+  overflow: hidden;
+}
+
+.resource__wrapper {}
+
+.resource__title-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 973px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/resources-circle.svg");
+    left: 0;
+    top: 38px;
+  }
+
+  &::after {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/resources-circle.svg");
+    left: 400px;
+    top: 170px;
+  }
+}
+
+.resource__title {
+  width: 100%;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 180px;
+  line-height: 185px;
+  color: #00094A;
+  margin: 0;
+}
+
+.resource__title-part-one {
+  margin-left: 33px;
+}
+
+.resource__title-part-two {
+  display: block;
+  margin-left: 390px;
+  margin-right: 70px;
+
+  &::after {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/resources-big-circle.svg");
+    top: 205px;
+    right: 20px;
+  }
+
+}
+
+.resource__title-part-three {
+  margin-left: 104px;
+
+  &::after {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/resources-circle.svg");
+    left: 482px;
+    top: 482px;
+  }
+}
+
+.resource__img {
+  position: absolute;
+  top: 248px;
+  left: 256px;
+}
+
+.resource__subtitle {
+  width: 100%;
+  max-width: 219px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.7;
+  margin: 0;
+  left: 500px;
+  top: 115px;
+}
+
+.resource__line-wrapper {
+  position: absolute;
+  top: 421px;
+  right: 25px;
+}
+
+.line__one {
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.line__two {
+  display: inline-block;
+  width: 14px;
+  height: 5px;
+  background-color: #000;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.line__three {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background-color: #000;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
+
+// RESPONSIVE
+
+@include breakpointdown (977px) {
+  .resource__title-part-two {
+    &::after {
+      display: none;
+    }
+  }
+} 
+
+@include breakpointdown (920px) {
+  .resource__title-part-two {
+    margin-left: 190px;
+  }
+
+  .resource__img {
+    left: 50px;
+    top: 185px;
+  }
+
+  .resource__subtitle {
+    top: 90px;
+    left: 400px;
+  } 
+
+  .resource__title {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .resource__line-wrapper  {
+    top: 400px;
+  }
+
+  .resource__title-wrapper {
+    &::before {
+      top: 20px;
+    }
+
+    &::after {
+      left: 355px;
+      top: 130px;
+    }
+  }
+} 
+
+@include breakpointdown (640px) {
+
+  .resource__title-wrapper {
+    &::before {
+      opacity: 0.1;
+      left: 220px;
+    }
+
+    &::after {
+      top: 88px;
+      left: 70px;
+      opacity: 0.1;
+    } 
+  }
+
+  .resource__title {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  .resource__subtitle {
+    width: 158px;
+    font-size: 10px;
+    line-height: 12px;
+    left: 140px;
+    top: 80px;
+  }
+
+  .resource__title-part-one {
+    margin-left: 0px;
+  }
+
+  .resource__title-part-two {
+    margin-left: 110px;
+
+    &::after {
+      display: block;
+      left: 250px;
+      top: 189px;
+      opacity: 0.1;
+      background-size: 19px;
+    }
+  }
+
+  .resource__title-part-three {
+    margin-left: 40px;
+  }
+
+  .resource__img {
+    width: 40px; 
+    height: 40px;
+    top: 120px;
+    left: 32px;
+  }
+
+  .resource__line-wrapper {
+    display: none;
+  }
+
+} 
+
+@include breakpointdown (360px) {
+  .resource__title-part-two {
+    margin-left: 60px;
+  }
+
+  .resource__img {
+    left: 10px;
+  }
+
+  .resource__title-part-three {
+    margin-left: 20px;
+  }
+
+}

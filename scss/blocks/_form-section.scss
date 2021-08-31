@@ -1,0 +1,257 @@
+
+
+// FORM SECTION STYLES
+
+.form-section {
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper__left {
+  width: 100%;
+  max-width: 465px;
+}
+
+.left__upper-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px; 
+  text-transform: uppercase; 
+  color: #00094A;
+  margin: 0;
+
+}
+
+.left__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px; 
+  color: #00094A;
+  margin: 0;
+}
+
+.left__title-part {
+  color: #30D2A3;
+}
+
+.left__madia-block { 
+  margin-top: 186px;
+}
+
+.media__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px; 
+  color: #000000;
+  margin: 0;
+}
+
+.media__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media__item~.media__item {
+  margin-left: 39px;
+  
+}
+
+.media__item {
+  transition: all 0.2s ease;
+}
+
+.media__item-icon:hover path {
+  fill: #30D2A3;
+  transition: all 0.3s ease;
+}
+
+.media__item:hover {
+  transform: scale(1.1);
+}
+
+.media__item:active {
+  transform: scale(0.90);
+}
+
+
+
+.wrapper__right {
+ width: 100%;
+ max-width: 627px;
+}
+
+.right__name-input {
+  display: block;
+  outline: none;
+  width: 100%;
+  max-width: 627px;
+  padding: 16px 0px 16px 20px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  color: #00094A;
+}
+
+.right__input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.right__company-input {
+  width: 100%;
+  max-width: 298px;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid #DBDBDB;
+  padding: 16px 0px 16px 20px;
+  margin-bottom: 40px;
+  color: #00094A;
+}
+
+.right__company-phone-num {
+  margin-left: 26px;
+}
+
+.right__textaria {
+  width: 100%;
+  resize: vertical;
+  padding: 16px;
+  color: #00094A;
+  outline: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.right__file-btn {
+  width: 200px;
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px; 
+  color: #000000;
+  background-color: $white;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 12px 0px 13px 57px;
+  margin-top: 20px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("../../images/attach.svg");
+    left: 25px;
+    top: 14px;
+  }
+}
+
+.right__file-btn:hover {
+  background-color: rgb(220, 220, 255);
+}
+
+.right__file-text {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px; 
+  color: #000000;
+  opacity: 0.7;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.right__form-button {
+  margin-top: 30px;
+  padding: 14px 52px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px; 
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #30D2A3;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.right__form-button:hover {
+  background-color: #36ad8c;
+}
+
+.right__form-button:active {
+  background-color: #1fe9b0;
+}
+
+.wrapper__right-res {
+  display: none;
+}
+
+// RESPONSIVE 
+
+@include breakpointdown (900px) {
+
+  .left__upper-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .left__title {
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 320px;
+  }
+
+  .form__wrapper {
+    justify-content: center;
+  }
+
+  .left__madia-block {
+    margin-top: 70px;
+  }
+
+  .wrapper__right {
+    display: none;
+  }
+
+  .wrapper__right-res {
+    display: block;
+    margin-top: 23px;
+  }
+}
+
+@include breakpointdown (500px) {
+  .right__input-wrapper {
+    display: block;
+  }
+
+  .right__company-input {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right__company-phone-num   {
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}

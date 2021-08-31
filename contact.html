@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contact us</title>
+  <link rel="shortcut icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
   <header class="site-header header">
     <div class="container">
@@ -17,7 +20,7 @@
         </a>
         <a class="header__phone-number" href="tel:+998901234567">+998 90 123 45 67</a>
         <p class="header__choose-language">EN</p>
-        <a class="header__button site-button" href="#">оставить заявку</a>
+        <a class="header__button site-button" href="contact.html">оставить заявку</a>
         <p class="header__menu">меню</p>
 
         <nav class="header__nav">
@@ -70,7 +73,7 @@
             </li>
 
             <li class="header__item">
-              <a class="header__item-link" href="#">Ресурсы</a>
+              <a class="header__item-link" href="resources.html">Ресурсы</a>
             </li>
 
             <li class="header__item">
@@ -82,7 +85,7 @@
             </li>
 
             <li>
-              <a class="header__button site-button menu-button" href="#">оставить заявку</a>
+              <a class="header__button site-button menu-button" href="contact.html">оставить заявку</a>
             </li>
 
             <li class="header__menu-footer footer-menu">
@@ -110,11 +113,214 @@
 
     <section class="form-section form">
       <div class="container">
-        <div class="form__wrapper">
-          
+        <div class="form__wrapper wrapper">
+          <div class="wrapper__left left">
+            <p class="left__upper-title">есть новый или существующий проект?</p>
+            <h2 class="left__title">свяжитесь и мы <span class="left__title-part">реализируем</span> ваши идеи!</h2>
+
+            <div class="wrapper__right wrapper__right-res right">
+              <form action="https://echo.htmlacademy.ru" method="POST">
+                <input class="right__name-input" type="text" name="name_surname-patronymic" placeholder="Ф.И.О" required>
+  
+                <div class="right__input-wrapper">
+                  <input class="right__company-input" type="text" name="Name_company" placeholder="Название компании" required>
+                  <input class="right__company-phone-num right__company-input" type="tel" name="phone_number" placeholder="+998 _ _   _ _ _   _ _   _ _" required>
+                </div>
+  
+                <textarea class="right__textaria" name="messega" placeholder="Рассказивайте больше о проекте" cols="7" rows="10"></textarea>
+  
+                <input id="file" type="file" placeholder="Приложите файл">
+                <label class="right__file-btn" for="file">Приложите файл</label>
+  
+                <p class="right__file-text">Необъезательно. Файл должен быть на формате .doc, .pdf, .pptx, .zip</p>
+  
+                <button class="right__form-button" type="submit">отправить</button>
+              </form>
+            </div>
+
+            <div class="left__madia-block media">
+              <p class="media__title">Мы в соцсетях</p>
+              <ul class="media__list">
+                <li class="media__item">
+                  <a href="https://www.youtube.com/results?search_query=abutech+digital">
+                    <svg class="media__item-icon" width="43" height="30" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M41.4164 4.28649L41.4693 4.63237C40.9575 2.81649 39.5758 1.41532 37.8199 0.905318L37.7828 0.896494C34.4811 2.41925e-05 21.1946 2.43883e-05 21.1946 2.43883e-05C21.1946 2.43883e-05 7.94169 -0.0176228 4.6064 0.896494C2.81699 1.41532 1.43346 2.81649 0.930518 4.59531L0.921695 4.63237C-0.311833 11.0753 -0.320657 18.8171 0.976401 25.7153L0.921695 25.3659C1.43346 27.1818 2.81522 28.5829 4.5711 29.0929L4.60816 29.1018C7.90639 30 21.1964 30 21.1964 30C21.1964 30 34.4475 30 37.7846 29.1018C39.5758 28.5829 40.9593 27.1818 41.4622 25.4029L41.4711 25.3659C42.0322 22.3694 42.3534 18.9212 42.3534 15.3988C42.3534 15.27 42.3534 15.1394 42.3517 15.0088C42.3534 14.8888 42.3534 14.7459 42.3534 14.603C42.3534 11.0788 42.0322 7.63061 41.4164 4.28649ZM16.9558 21.4429V8.57296L28.0134 15.0177L16.9558 21.4429Z"
+                        fill="#00094A" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="media__item">
+                  <a href="#">
+                    <svg class="media__item-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z"
+                        fill="#00094A" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="media__item">
+                  <a href="#">
+                    <svg class="media__item-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.005 7.29663C10.7514 7.29663 7.30768 10.7441 7.30768 14.994C7.30768 19.2477 10.7551 22.6914 15.005 22.6914C19.2587 22.6914 22.7024 19.2439 22.7024 14.994C22.7024 10.7403 19.255 7.29663 15.005 7.29663ZM15.005 19.9902C12.2438 19.9902 10.0089 17.7539 10.0089 14.994C10.0089 12.234 12.2451 9.99783 15.005 9.99783C17.765 9.99783 20.0012 12.234 20.0012 14.994C20.0025 17.7539 17.7662 19.9902 15.005 19.9902Z"
+                        fill="#00094A" />
+                      <path
+                        d="M21.1849 0.0942317C18.425 -0.0345161 11.5888 -0.0282662 8.82638 0.0942317C6.39892 0.20798 4.25771 0.794219 2.53149 2.52044C-0.35346 5.40539 0.0152838 9.29282 0.0152838 14.994C0.0152838 20.8289 -0.30971 24.6263 2.53149 27.4675C5.42769 30.3625 9.37137 29.9837 15.005 29.9837C20.7849 29.9837 22.7799 29.9875 24.8236 29.1962C27.6023 28.1175 29.6998 25.6338 29.9048 21.1726C30.0348 18.4114 30.0273 11.5765 29.9048 8.81408C29.6573 3.54792 26.8311 0.354227 21.1849 0.0942317ZM25.5536 25.5588C23.6624 27.45 21.0387 27.2813 14.9688 27.2813C8.71888 27.2813 6.21268 27.3738 4.38396 25.54C2.27774 23.4438 2.65899 20.0776 2.65899 14.974C2.65899 8.06784 1.95025 3.09418 8.88138 2.73919C10.4739 2.68294 10.9426 2.66419 14.9513 2.66419L15.0075 2.70169C21.6687 2.70169 26.8948 2.0042 27.2086 8.93408C27.2798 10.5153 27.2961 10.9903 27.2961 14.9927C27.2948 21.1701 27.4123 23.6913 25.5536 25.5588Z"
+                        fill="#00094A" />
+                      <path
+                        d="M23.0073 8.79159C24.0007 8.79159 24.8061 7.98628 24.8061 6.99287C24.8061 5.99947 24.0007 5.19415 23.0073 5.19415C22.0139 5.19415 21.2086 5.99947 21.2086 6.99287C21.2086 7.98628 22.0139 8.79159 23.0073 8.79159Z"
+                        fill="#00094A" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="media__item">
+                  <a href="#">
+                    <svg class="media__item-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 30H15V19.6875H11.25V15H15V11.25C15 8.1425 17.5175 5.625 20.625 5.625H24.375V10.3125H22.5C21.465 10.3125 20.625 10.215 20.625 11.25V15H25.3125L23.4375 19.6875H20.625V30H26.25C28.3175 30 30 28.3175 30 26.25V3.75C30 1.68125 28.3175 0 26.25 0H3.75C1.68125 0 0 1.68125 0 3.75V26.25C0 28.3175 1.68125 30 3.75 30Z" fill="#00094A"/>
+                      </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="wrapper__right right">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <input class="right__name-input" type="text" name="name_surname-patronymic" placeholder="Ф.И.О" required>
+
+              <div class="right__input-wrapper">
+                <input class="right__company-input" type="text" name="Name_company" placeholder="Название компании" required>
+                <input class="right__company-phone-num right__company-input" type="tel" name="phone_number" placeholder="+998 _ _   _ _ _   _ _   _ _" required>
+              </div>
+
+              <textarea class="right__textaria" name="messega" placeholder="Рассказивайте больше о проекте" cols="7" rows="10"></textarea>
+
+              <input id="file" type="file" placeholder="Приложите файл">
+              <label class="right__file-btn" for="file">Приложите файл</label>
+
+              <p class="right__file-text">Необъезательно. Файл должен быть на формате .doc, .pdf, .pptx, .zip</p>
+
+              <button class="right__form-button" type="submit">отправить</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
+
+     <!-- ORDER SERVICE -->
+
+     <section class="order-section order">
+      <div class="order__wrapper order">
+
+        <div class="order__block ">
+          <h2 class="block__title">Хотите заказать услуги?</h2>
+          <p class="block__text">Reference site about, giving information on its origins, as well as a random Lipsum
+            generator.</p>
+
+          <form class="block__form" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="block__input" type="tel" name="phone_number" required maxlength="12" minlength="12"
+              placeholder="+998 91 256 25 36">
+            <button class="block__button site-button" type="submit">отправить</button>
+          </form>
+          <div class="order__block-bgliner"></div>
+        </div>
+
+        <div class="order__block">
+          <h2 class="block__title">Ознакомтесь с начальными
+            инструкциями</h2>
+          <p class="block__text">Reference site about, giving information on its origins</p>
+
+          <button class="block__button block__button-two site-button" type="button">Скачать бриф</button>
+          <div class="order__block-bgliner"></div>
+        </div>
+
+      </div>
+    </section>
   </main>
+
+  <!-- FOOTER SECTION -->
+
+  <footer class="footer-section footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <h2 class="foote__title">Хотите сделать что-то великое? Позвольте вам помочь.</h2>
+        <p class="footer__subtitle">Готовы? Свяжитесь сегодня.</p>
+
+        <div class="footer__contact-big-wrapper ">
+          <div class="footer__contact-wrapper contact">
+
+            <div class="contact__mini-wrapper">
+
+              <div>
+                <span class="contact__title">E-mail</span>
+                <a class="contact__email" href="mailto:info@abutech.com">info@abutech.com</a>
+              </div>
+
+              <div>
+                <span class="contact__title contact__title-responsive">Номер телефона</span>
+                <a class="contact__email contact__email-responsive" href="tel:+994949449484">+994 94 944 94 84 </a>
+              </div>
+
+            </div>
+            <span class="contact__title">Наш офис</span>
+            <a class="contact__location-place" href="#">Sebzor street, Xadra square, Tashkent, Uzbekistan</a>
+
+          </div>
+
+          <div class="footer__contact-wrapper contact">
+            <span class="contact__title">Номер телефона</span>
+            <a class="contact__email" href="tel:+994949449484">+994 94 944 94 84 </a>
+
+            <span class="contact__title">Мы в соц.сетях</span>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Facebook</a>
+              </li>
+
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Instagram</a>
+              </li>
+
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Telegram</a>
+              </li>
+
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Behance</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__button-wrpper">
+            <a class="contact__button" href="#">Ознакомиться с услугами</a>
+            <a class="contact__button " href="#">Посмотреть работы</a>
+            <span class="contact__title contact__title-res">Мы в соц.сетях</span>
+            <ul class="contact__list contact__list-res">
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Facebook</a>
+              </li>
+
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Instagram</a>
+              </li>
+
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Telegram</a>
+              </li>
+
+              <li class="contact__item">
+                <a class="contact__item-link" href="#">Behance</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
