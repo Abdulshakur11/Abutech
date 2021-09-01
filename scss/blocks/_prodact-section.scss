@@ -119,6 +119,7 @@
   @include list-unstyled;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 30px;
 
   &::before {
@@ -263,7 +264,7 @@
   .prodact__list {
     &::before {
       top: 65px;
-      left: -52px;
+      left: -20px;
       background-size: 90px;
     }
 
@@ -277,6 +278,7 @@
 
   .prodact__item {
     max-width: 200px;
+    // margin-left: 160px;
 
     &::after {
       top: 14%;
@@ -321,6 +323,8 @@
   }
   
   .prodact__item{
+
+    margin-left: 150px;
     &::after {
       background-size: 40px;
       top: 12%;
@@ -376,6 +380,4 @@
   .prodact__item-video-img-bgcolor {
     height: 36%;
   }
-
-
 } 

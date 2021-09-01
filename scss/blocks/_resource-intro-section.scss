@@ -1,0 +1,163 @@
+
+// resource-intro-section
+
+.resource-intro-section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.resource__title-intro-wrapper {
+  max-width: 1100px;  
+
+}
+
+.resource__intro-title-part-two {
+  margin-left: 437px;
+
+  &::after {
+    top: 365px;
+    right: 165px;
+  }
+} 
+
+.resource__intro-title-part-three {
+  margin-left: 140px;
+
+  &::after {
+    left: 525px;
+  }
+}
+
+.resource__intro-subtitle {
+  left: 616px;
+  top: 111px;
+}
+
+.resource__intro-img {
+  z-index: -1;
+  left: 430px;
+  top: 287px;
+}
+
+.resource__intro-line-wrapper {
+  transform: rotate(-90deg);
+  top: -505px;
+  left: -500px;
+}
+
+.resource__intro-img-two {
+  position: absolute;
+  top: 130px;
+  left: 23px;
+}
+
+// RESPONSIVE
+
+@include breakpointdown (1140px) {
+  .resource__intro-title-part-two {
+    margin-left: 150px;
+  }
+
+  .resource__intro-subtitle {
+    left: 455px;
+  }
+
+  .resource__intro-img {
+    left: 250px;  
+  }
+
+  .resource__intro-img-two {
+    top: 110px;
+  }
+
+  .resource__intro-line-wrapper {
+    display: none;
+  }
+}
+
+@include breakpointdown (754px) {
+
+  .resource__title-intro-wrapper {
+    &::after {
+      left: 80px;
+      top: 135px;
+    }
+  }
+
+  .resource__intro-title {
+    width: 100%;
+    max-width: 350px;
+    font-size: 80px;
+    line-height: 96px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .resource__intro-title-part-two {
+    margin-left: 49px;
+    margin-right: 0;
+
+    &::after {
+      top: 229px;
+    }
+  }
+
+  .resource__intro-title-part-three {
+    margin-left: 115px;
+  }
+
+  .resource__intro-subtitle {
+    left: 160px;
+    top: 130px;
+  }
+
+  .resource__intro-img {
+    width: 150px;
+    height: 150px;
+    left: 85px;
+    top: 253px;
+  }
+
+  .resource__intro-img-two {
+    width: 40px;
+    height: 40px;
+    top: 115px;
+    left: 8px;
+  }
+
+  
+  .resource__intro-line-wrapper {
+    display: block;
+    top: -46px;
+    left: -272px;
+  }
+
+}
+
+
+@include breakpointdown (354px){
+  .resource__intro-title {
+    font-size: 70px;
+    line-height: 86px;
+  }
+
+  .resource__intro-subtitle {
+    top: 122px;
+  }
+
+  .resource__intro-img {
+    top: 200px; 
+    left: 60px;
+  }
+
+  .resource__intro-img-two {
+    top: 105px;
+  }
+
+  .resource__intro-line-wrapper {
+    display: block;
+    top: 0px;
+    left: -210px;
+  }
+}
