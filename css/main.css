@@ -3937,6 +3937,16 @@ input[type=file] {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  transition: all 0.3s ease;
+}
+
+.about__plus-icon:hover {
+  filter: drop-shadow(0px 0px 5px #646464);
+  transform: scale(1.06);
+}
+
+.about__plus-icon:active {
+  transform: scale(0.9);
 }
 
 @media only screen and (max-width: 444px) {
@@ -4278,6 +4288,18 @@ input[type=file] {
   background-color: #06A39C;
   padding: 14px 20px;
   border-radius: 3px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.brand__item-btn:hover {
+  border: 2px solid #00094A;
+  background-color: rgba(0, 205, 178, 0.746);
+  color: #00094A;
+}
+
+.brand__item-btn:active {
+  box-shadow: inset 0px 0px 7px #00294a;
 }
 
 .brand__item-img-res {
@@ -4397,14 +4419,18 @@ input[type=file] {
   background-color: #06A39C;
   margin-left: 240px;
   transition: all 0.3s ease;
+  border: 3px solid transparent;
 }
 
 .brand__footer-btn:hover {
   background-color: #57c0bb;
+  border: 3px solid #00094A;
+  color: #00094A;
 }
 
 .brand__footer-btn:active {
   background-color: #35cfc8;
+  box-shadow: inset 0px 0px 7px #00294a;
 }
 
 @media only screen and (max-width: 1081px) {
